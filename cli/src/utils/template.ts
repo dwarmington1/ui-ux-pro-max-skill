@@ -319,17 +319,6 @@ export async function generatePlatformFiles(
   // the orchestrator so all 7 skills are delivered.
   await copySubSkills(skillsParentDir, force);
 
-  // Install the sibling sub-skills (banner-design, brand, design, ...) next to
-  // the orchestrator so all 7 skills are delivered. The skills parent is the
-  // orchestrator's parent dir (skills/ for most platforms, prompts/ for
-  // copilot, steering/ for kiro) — derived, not hardcoded.
-  const skillsParentDir = join(
-    effectiveDir,
-    config.folderStructure.root,
-    dirname(config.folderStructure.skillPath)
-  );
-  await copySubSkills(skillsParentDir, force);
-
   return createdFolders;
 }
 
