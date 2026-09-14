@@ -229,6 +229,7 @@ _DOMAIN_QUERY_REWRITES = {
            "wcag": "accessibility"},
     "google-fonts": {"typography": "font"},
     "icons": {"lucide": None, "symbol": None, "glyph": None, "pictogram": None},
+    "motion": {"vaul": "drawer"},
     "gsap": {"gsap": "animation", "quickto": None, "scrolltrigger": "scroll",
              "flip plugin": None, "splittext": None},
     "react": {"nextjs": "react", "usecallback": "memoization",
